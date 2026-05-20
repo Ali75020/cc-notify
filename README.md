@@ -46,10 +46,10 @@ Works with both **Claude Code CLI** and the **Claude Code Desktop app** — they
 Open PowerShell and run:
 
 ```powershell
-irm https://raw.githubusercontent.com/Ali7020/cc-notify/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Ali75020/cc-notify/main/install.ps1 | iex
 ```
 
-> **Security note:** `irm | iex` downloads and runs a script directly. You can read `install.ps1` on GitHub before running it. The script only copies files into `~/.claude/hooks/` and merges two hook entries into `~/.claude/settings.json` — it never touches anything else.
+> **Security note:** `irm | iex` downloads and runs a script directly. You can read `install.ps1` at [github.com/Ali75020/cc-notify](https://github.com/Ali75020/cc-notify) before running it. The script only copies files into `~/.claude/hooks/` and merges two hook entries into `~/.claude/settings.json` — it never touches anything else.
 
 ---
 
@@ -58,7 +58,7 @@ irm https://raw.githubusercontent.com/Ali7020/cc-notify/main/install.ps1 | iex
 If you prefer a guided experience with live previews:
 
 ```powershell
-git clone https://github.com/Ali7020/cc-notify.git
+git clone https://github.com/Ali75020/cc-notify.git
 cd cc-notify
 .\setup-wizard.ps1
 ```

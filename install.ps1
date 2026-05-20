@@ -344,10 +344,10 @@ if ($hasGh) {
         & git add . 2>&1 | Out-Null
         & git commit -m "Initial commit: cc-notify" 2>&1 | Out-Null
         Log "OK  git commit"
-        & gh repo create Ali7020/cc-notify --public --source=. --push 2>&1 | Out-Null
-        Log "OK  GitHub repo created: Ali7020/cc-notify"
+        & gh repo create Ali75020/cc-notify --public --source=. --push 2>&1 | Out-Null
+        Log "OK  GitHub repo created: Ali75020/cc-notify"
         Write-Host ""
-        Write-Host "Repo published: https://github.com/Ali7020/cc-notify" -ForegroundColor Green
+        Write-Host "Repo published: https://github.com/Ali75020/cc-notify" -ForegroundColor Green
         Pop-Location
     } catch {
         Log "WARN: GitHub step failed: $_"

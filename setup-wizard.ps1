@@ -341,10 +341,10 @@ if ($hasGh) {
             if (-not (Test-Path ".git")) { & git init 2>&1 | Out-Null }
             & git add .    2>&1 | Out-Null
             & git commit -m "Initial commit: cc-notify" 2>&1 | Out-Null
-            & gh repo create Ali7020/cc-notify --public --source=. --push 2>&1 | Out-Null
+            & gh repo create Ali75020/cc-notify --public --source=. --push 2>&1 | Out-Null
             Pop-Location
-            Write-Host "  ✓ https://github.com/Ali7020/cc-notify" -ForegroundColor Green
-            Log "GitHub repo created: Ali7020/cc-notify"
+            Write-Host "  ✓ https://github.com/Ali75020/cc-notify" -ForegroundColor Green
+            Log "GitHub repo created: Ali75020/cc-notify"
         } catch {
             Write-Host "  ! GitHub push failed: $_" -ForegroundColor Yellow
             Log "GitHub push failed: $_"
